@@ -1,14 +1,14 @@
-# This document describes the data and transofrmations used by run_analysis.R and the definition of variables in tidydata.txt.
+### This document describes the data and transofrmations used by run_analysis.R and the definition of variables in tidydata.txt.
 
 __Transformations with the input dataset:__  
-X_train.txt 		is read into 	featuresTrain.  
-y_train.txt 		is read into 	activityTrain.  
-subject_train.txt is read into 	subjectTrain.  
-X_test.txt 		is read into 	featuresTest.  
-y_test.txt 		is read into 	activityTest.  
-subject_test.txt 	is read into 	subjectTest.  
-features.txt 		is read into 	featureNames.  
-activity_labels.txt is read into 	activityLabels.   
+X_train.txt 		_is read into_ 	featuresTrain.  
+y_train.txt 		_is read into_ 	activityTrain.  
+subject_train.txt _is read into_ 	subjectTrain.  
+X_test.txt 		_is read into_ 	featuresTest.  
+y_test.txt 		_is read into_ 	activityTest.  
+subject_test.txt 	_is read into_ 	subjectTest.  
+features.txt 		_is read into_ 	featureNames.  
+activity_labels.txt _is read into_ 	activityLabels.   
 
 
 
