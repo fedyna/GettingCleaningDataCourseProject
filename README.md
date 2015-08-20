@@ -22,11 +22,11 @@ __metadata with the name of the activities:__
 activityLabels <- read.table("./UCI HAR Dataset/activity_labels.txt", header = FALSE)  
 
 # 1) Merge the training and the test sets to create one data set.  
-Combine the respective data in training and test data sets corresponding to subject, activity and features. RECEIVE -> subject, activity, features.  
+__Combine the respective data in training and test data sets corresponding to subject, activity and features. RECEIVE -> _subject_, _activity_, _features_:__  
 subject <- rbind(subjectTrain, subjectTest)  
 features <- rbind(featuresTrain, featuresTest)  
 activity <- rbind(activityTrain, activityTest)  
-Assigns the name of the column  
+__Assigns the name of the column:__  
 colnames(features) <- featureNames  
 colnames(activity) <- "Activity"  
 colnames(subject) <- "Subject"  
