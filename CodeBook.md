@@ -22,7 +22,7 @@ __tidyDATA is created as a set with average for each activity and subject of ext
 
 __Finally, data in tidyDATA is written into tidydata.txt.__
 
-__The header line of tidydata.txt file contains the names of the variables.__  
+__The header line of tidydata.txt file contains the names of the variables:__  
 [1] "Activity"                                            
 [2] "Subject"                                            
 [3] "TimeBodyAccelerometer-mean()-X"                      
