@@ -9,7 +9,7 @@ __In this project, you find:__
 # Getting Started  
 ## Read training data  
 ```{r}
-subjectTrain <- read.table("./UCI HAR Dataset/train/subject_train.txt", header = FALSE  
+subjectTrain <- read.table("./UCI HAR Dataset/train/subject_train.txt", header = FALSE)  
 featuresTrain <- read.table("./UCI HAR Dataset/train/X_train.txt", header = FALSE)  
 activityTrain <- read.table("./UCI HAR Dataset/train/y_train.txt", header = FALSE)  
 ```
