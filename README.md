@@ -29,7 +29,10 @@ activity <- rbind(activityTrain, activityTest)
 __Assigns the name of the column:__  
 colnames(features) <- featureNames  
 colnames(activity) <- "Activity"  
-colnames(subject) <- "Subject"  
+colnames(subject) <- "Subject"    
+## The data in features,activity and subject are merged and the mergedDATA  
+mergedDATA <- cbind(activity, subject, features)  
+
 
 
 
