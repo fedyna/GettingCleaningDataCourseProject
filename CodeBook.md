@@ -19,9 +19,10 @@ __Acronyms replacement in variable names:__
 'BodyBody' _is replaced_ 'Body'  
 
 __tidyDATA is created as a set with average for each activity and subject of extractedDATA.__   
+
 __Finally, data in tidyDATA is written into tidydata.txt.__
 
-__The header line of tidydata.txt file contains the names of the variables.__
+__The header line of tidydata.txt file contains the names of the variables.__  
 [1] "Activity"                                            
 [2] "Subject"                                            
 [3] "TimeBodyAccelerometer-mean()-X"                      
