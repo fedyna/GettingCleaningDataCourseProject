@@ -83,8 +83,7 @@ names(extractedDATA) <- gsub("tBody", "TimeBody", names(extractedDATA))
 
 # names(extractedDATA)
 ```
-# 5) From the data set in step 4, creates a second, independent tidy data set 
-with the average of each variable for each activity and each subject.
+# 5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 __Create tidyDATA as a data set with average for each subject and activity__
 ```{r}
