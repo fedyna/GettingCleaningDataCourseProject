@@ -28,7 +28,7 @@ __metadata with the name of the activities:__
 ```{r}
 activityLabels <- read.table("./UCI HAR Dataset/activity_labels.txt", header = FALSE)  
 ```
-# 1) Merge the training and the test sets to create one data set.  
+## 1) Merge the training and the test sets to create one data set.  
 __Combine the respective data in training and test data sets corresponding to subject, activity and features. RECEIVE -> _subject_, _activity_, _features_:__  
 ```{r}
 subject <- rbind(subjectTrain, subjectTest)  
@@ -41,18 +41,18 @@ colnames(features) <- featureNames
 colnames(activity) <- "Activity"  
 colnames(subject) <- "Subject"    
 ```
-## The data in features, activity and subject are merged in the mergedDATA  
+### The data in features, activity and subject are merged in the mergedDATA  
 ```{r}
 mergedDATA <- cbind(activity, subject, features)  
 ```
-# 2) Extracts only the measurements on the mean and standard deviation for each measurement.
+## 2) Extracts only the measurements on the mean and standard deviation for each measurement.
 ```{r}
 colExtractMeanStd <- grep(".*mean.*|.*std.*", names(mergedDATA), ignore.case = TRUE)
 extractedDATA <- mergedDATA[,colExtractMeanStd]
 extractedDATA <- cbind(activity, subject, extractedDATA)
 ```
 
-# 3) Uses descriptive activity names to name the activities in the data set  
+## 3) Uses descriptive activity names to name the activities in the data set  
 ```{r}
 extractedDATA$Activity <- as.character(extractedDATA$Activity)
 for (i in 1:6){
@@ -61,7 +61,7 @@ for (i in 1:6){
 
 extractedDATA$Activity <- as.factor(extractedDATA$Activity)
 ```
-# 4) Appropriately labels the data set with descriptive variable names
+## 4) Appropriately labels the data set with descriptive variable names
 ```{r}
 # names(extractedDATA)
 
@@ -83,7 +83,7 @@ names(extractedDATA) <- gsub("tBody", "TimeBody", names(extractedDATA))
 
 # names(extractedDATA)
 ```
-# 5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+## 5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 __Create tidyDATA as a data set with average for each subject and activity__
 ```{r}
