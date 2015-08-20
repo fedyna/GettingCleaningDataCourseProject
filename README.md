@@ -16,8 +16,8 @@ subjectTest <- read.table("./UCI HAR Dataset/test/subject_test.txt", header = FA
 featuresTest <- read.table("./UCI HAR Dataset/test/X_test.txt", header = FALSE)  
 activityTest <- read.table("./UCI HAR Dataset/test/y_test.txt", header = FALSE)  
 ## Read Supporting Metadata  
-### metadata with the name of the features  
+__metadata with the name of the features__  
 featureNames <- read.table("./UCI HAR Dataset/features.txt", header = FALSE)[,2]  
-### metadata with the name of the activities  
+__metadata with the name of the activities__  
 activityLabels <- read.table("./UCI HAR Dataset/activity_labels.txt", header = FALSE)  
 
