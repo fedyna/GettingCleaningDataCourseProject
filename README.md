@@ -16,8 +16,22 @@ subjectTest <- read.table("./UCI HAR Dataset/test/subject_test.txt", header = FA
 featuresTest <- read.table("./UCI HAR Dataset/test/X_test.txt", header = FALSE)  
 activityTest <- read.table("./UCI HAR Dataset/test/y_test.txt", header = FALSE)  
 ## Read Supporting Metadata  
-__metadata with the name of the features__  
+__metadata with the name of the features:__  
 featureNames <- read.table("./UCI HAR Dataset/features.txt", header = FALSE)[,2]  
-__metadata with the name of the activities__  
+__metadata with the name of the activities:__  
 activityLabels <- read.table("./UCI HAR Dataset/activity_labels.txt", header = FALSE)  
+
+# 1) Merge the training and the test sets to create one data set.  
+Combine the respective data in training and test data sets corresponding to subject, activity and features. RECEIVE -> subject, activity, features.  
+subject <- rbind(subjectTrain, subjectTest)  
+features <- rbind(featuresTrain, featuresTest)  
+activity <- rbind(activityTrain, activityTest)  
+Assigns the name of the column  
+colnames(features) <- featureNames  
+colnames(activity) <- "Activity"  
+colnames(subject) <- "Subject"  
+
+
+
+
 
