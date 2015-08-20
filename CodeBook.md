@@ -10,8 +10,18 @@ subject_test.txt 	_is read into_ 	subjectTest.
 features.txt 		_is read into_ 	featureNames.  
 activity_labels.txt _is read into_ 	activityLabels.   
 
+__Acronyms replacement in variable names:__ 
+'Acc' _is replaced_ 'Accelerometer';
+'Gyro' _is replaced_ 'Gyroscope';
+'Mag' _is replaced_ 'Magnitude';
+'t' _is replaced_ 'Time';
+'f' _is replaced_ 'Frequency';
+'BodyBody' _is replaced_ 'Body'
 
+__tidyDATA is created as a set with average for each activity and subject of extractedDATA.__   
+__Finally, data in tidyDATA is written into tidydata.txt.__
 
+### The header line of tidydata.txt file contains the names of the variables.
 [1] "Activity"                                            
 [2] "Subject"                                            
 [3] "TimeBodyAccelerometer-mean()-X"                      
@@ -101,4 +111,4 @@ activity_labels.txt _is read into_ 	activityLabels.
 [87] "angle(Y,gravityMean)"                              
 [88] "angle(Z,gravityMean)"
 
-The output data tidydata.txt. The header line contains the names of the variables. It contains the mean and standard deviation values of the data contained in the input files.
+
